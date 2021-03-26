@@ -5,6 +5,11 @@ function Projects() {
 		<section>
 			<div className="section-container">
 				<h1>Projects</h1>
+				<p>
+					I like to stay busy and always have a project in the works. Take a
+					look at some of the applications, articles, and companies I've
+					dedicated my time to.
+				</p>
 				<div className="grid-container">
 					<div className="flexCol">
 						<img src="./InfauxWars.png" alt="Infaux Wars" />
