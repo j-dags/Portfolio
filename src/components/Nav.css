@@ -1,0 +1,15 @@
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 80%;
+	max-width: 1200px;
+	margin: auto;
+	text-align: left;
+	padding: 6rem 4rem;
+}
+
+.links {
+	width: 125px;
+	justify-content: space-between;
+}
