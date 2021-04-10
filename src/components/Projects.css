@@ -46,4 +46,8 @@ a img {
 	.projects-description {
 		margin: 0rem 0rem 2rem 0rem;
 	}
+
+	.project-card {
+		width: 84%;
+	}
 }

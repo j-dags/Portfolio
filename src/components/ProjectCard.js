@@ -4,7 +4,7 @@ import { FlexColLeft, FlexRow } from './'
 
 function ProjectCard({ link, img, alt, title, description, github }) {
 	return (
-		<FlexColLeft>
+		<FlexColLeft className='project-card'>
 			<a href={link} target='_blank' rel='noreferrer'>
 				<motion.div
 					whileHover={{ scale: 1.05, opacity: 0.9 }}
