@@ -1,0 +1,33 @@
+.emailTo {
+	color: #006ba6;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	position: relative;
+	text-decoration: none;
+	z-index: 5;
+}
+
+.emailTo:before {
+	background-color: #70cdff;
+	bottom: -6px;
+	right: -6px;
+	content: '';
+	height: calc(100% - 4px);
+	opacity: 0.2;
+	position: absolute;
+	transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+	width: 100%;
+	z-index: -1;
+}
+
+.emailTo:hover:before {
+	bottom: -2px;
+	height: 130%;
+	opacity: 0.25;
+	right: -6px;
+	width: 110%;
+}
+
+.github:before {
+	background-color: #f4d35e;
+}

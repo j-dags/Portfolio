@@ -1,4 +1,5 @@
 import React from 'react'
+import './Footer.css'
 
 function Footer() {
 	return (
@@ -9,7 +10,15 @@ function Footer() {
 					Feel free to reach out to me if you're looking for a developer, have a
 					question, or just want to connect!
 				</p>
-				<p>email@email.com</p>
+				<span>{<br />}</span>
+				<a
+					href='mailto:jon@dagdagan.dev'
+					target='_blank'
+					className='emailTo'
+					rel='noreferrer'
+				>
+					jon@dagdagan.dev
+				</a>
 			</div>
 		</section>
 	)

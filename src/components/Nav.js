@@ -7,11 +7,17 @@ function Nav() {
 		<section>
 			<nav>
 				<h3>DAGDAGAN.DEV</h3>
-				<FlexRow className='links'>
-					<a target='_blank' rel='noreferrer' href='https://github.com/j-dags'>
+				<FlexRow className='links' style={{ position: 'relative' }}>
+					<a
+						target='_blank'
+						className='github'
+						rel='noreferrer'
+						href='https://github.com/j-dags'
+					>
 						github
 					</a>
 					<a
+						className='highlight'
 						target='_blank'
 						rel='noreferrer'
 						href='https://www.linkedin.com/in/jon-dagdagan/'
