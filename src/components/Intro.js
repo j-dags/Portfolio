@@ -1,19 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const frontEnd = [
-	'Javascript ES6',
-	'HTML & CSS',
-	'React',
-	'Redux',
-	'Semantic UI',
-	'Styled-Components',
-]
-
-const backEnd = ['Node', 'Express', 'Postgres', 'Sequelize']
-const hosting = ['Heroku', 'Firebase', 'Netlify']
-const ml = ['Python', 'TensorFlow']
-
 function Intro() {
 	return (
 		<section>

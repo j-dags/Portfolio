@@ -1,7 +1,6 @@
 import React, { useLayoutEffect, useRef, useState } from 'react'
 import { FlexColLeft } from './StyledComponents'
 import { motion } from 'framer-motion'
-import styled from 'styled-components'
 import './Projects.css'
 
 function Projects() {
@@ -109,14 +108,5 @@ function Projects() {
 		</section>
 	)
 }
-// transform: translateX(${({ animate }) => (animate ? '0' : '-7.5vw')});
-// opacity: .9{({ animate }) => (animate ? '0.5' : '0')};
-// transition: transform 2s;
-
-const Grid = styled.div`
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	grid-gap: 4em;
-`
 
 export default Projects

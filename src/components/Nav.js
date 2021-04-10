@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlexRow, FlexCol } from './StyledComponents'
+import { FlexRow } from './StyledComponents'
 import './Nav.css'
 
 function Nav() {
