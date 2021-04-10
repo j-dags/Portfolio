@@ -4,8 +4,8 @@ My personal portfolio website, containing recent projects and links to social me
 
 ### Stack
 
-React
-React Hooks
-Framer-Motion
-Styled Components
-Netlify
+- React
+- React Hooks
+- Framer-Motion
+- Styled Components
+- Netlify
