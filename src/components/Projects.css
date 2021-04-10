@@ -1,5 +1,10 @@
 a img {
 	margin-bottom: 1rem;
-	border-radius: 3px;
-	box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.025);
+	box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.0125);
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 4em;
 }

@@ -75,12 +75,6 @@ section {
 	width: 100%;
 }
 
-.grid-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	grid-gap: 4em;
-}
-
 .intro {
 	display: flex;
 	flex-direction: row;

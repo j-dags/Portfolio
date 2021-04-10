@@ -19,7 +19,6 @@ export const FlexColLeft = styled.div`
 	align-items: flex-start;
 `
 
-// transition: transform 2s;
 // opacity: ${({ animate }) => (animate ? '0.5' : '0')};
 
 export const Slide = styled.div`
