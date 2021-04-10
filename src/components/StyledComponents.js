@@ -18,3 +18,13 @@ export const FlexColLeft = styled.div`
 	flex-direction: column;
 	align-items: flex-start;
 `
+
+// transition: transform 2s;
+// opacity: ${({ animate }) => (animate ? '0.5' : '0')};
+
+export const Slide = styled.div`
+	transform: translateX(${({ animate }) => (animate ? '0' : '-100vw')});
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 4em;
+`

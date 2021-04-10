@@ -58,6 +58,7 @@ h1 {
 
 img {
 	max-width: 100%;
+	border-radius: 3px;
 }
 
 #footer {
@@ -102,15 +103,6 @@ section {
 	flex: 5 1;
 }
 
-.stack {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.stack-list {
-	margin: 0rem 5rem 0rem 0rem;
-}
 /* .section-container p {
 	margin: 2rem 0rem;
 } */

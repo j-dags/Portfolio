@@ -1,0 +1,15 @@
+#stack-cntr {
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.stack {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 0.8rem;
+}
+
+.stack-list {
+	margin: 0rem 4rem 0rem 0rem;
+}

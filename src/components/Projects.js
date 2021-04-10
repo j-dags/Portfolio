@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef, useState } from 'react'
 import { FlexColLeft } from './StyledComponents'
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
+import './Projects.css'
 
 function Projects() {
 	const [show, doShow] = useState({ itemOne: false })
@@ -33,8 +34,15 @@ function Projects() {
 							rel='noreferrer'
 						>
 							<motion.div
-								whileHover={{ scale: 1.05, opacity: 0.75 }}
+								whileHover={{
+									scale: 1.05,
+									opacity: 0.9,
+								}}
 								whileTap={{ scale: 0.95 }}
+								transition={{
+									type: 'tween',
+									duration: 0.25,
+								}}
 							>
 								<img src='./InfauxWars.png' alt='Infaux Wars' />
 							</motion.div>
@@ -50,8 +58,9 @@ function Projects() {
 							rel='noreferrer'
 						>
 							<motion.div
-								whileHover={{ scale: 1.05, opacity: 0.75 }}
+								whileHover={{ scale: 1.05, opacity: 0.9 }}
 								whileTap={{ scale: 0.95 }}
+								transition={{ type: 'tween', duration: 0.25 }}
 							>
 								<img src='./AboveTheBreak.png' alt='Infaux Wars' />
 							</motion.div>
@@ -66,8 +75,9 @@ function Projects() {
 							rel='noreferrer'
 						>
 							<motion.div
-								whileHover={{ scale: 1.05, opacity: 0.75 }}
+								whileHover={{ scale: 1.05, opacity: 0.9 }}
 								whileTap={{ scale: 0.95 }}
+								transition={{ type: 'tween', duration: 0.25 }}
 							>
 								<img src='./MediumArticle.png' alt='Infaux Wars' />
 							</motion.div>
@@ -81,7 +91,7 @@ function Projects() {
 	)
 }
 // transform: translateX(${({ animate }) => (animate ? '0' : '-7.5vw')});
-// opacity: ${({ animate }) => (animate ? '0.5' : '0')};
+// opacity: .9{({ animate }) => (animate ? '0.5' : '0')};
 // transition: transform 2s;
 
 const Grid = styled.div`
