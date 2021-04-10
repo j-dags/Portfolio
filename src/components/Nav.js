@@ -6,7 +6,7 @@ function Nav() {
 	return (
 		<section>
 			<nav>
-				<h3>DAGDAG.DEV</h3>
+				<h3>DAGDAGAN.DEV</h3>
 				<FlexRow className='links'>
 					<a target='_blank' rel='noreferrer' href='https://github.com/j-dags'>
 						github
