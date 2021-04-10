@@ -1,20 +1,8 @@
 import React, { useLayoutEffect, useRef, useState } from 'react'
 import { FlexRow } from './StyledComponents'
 import { motion } from 'framer-motion'
+import { StackBackend, StackFrontend, StackML, StackHosting } from './'
 import './Stack.css'
-
-const frontEnd = [
-	'Javascript ES6',
-	'HTML & CSS',
-	'React',
-	'Redux',
-	'Semantic UI',
-	'Styled-Components',
-]
-
-const backEnd = ['Node', 'Express', 'Postgres', 'Sequelize']
-const hosting = ['Heroku', 'Firebase', 'Netlify']
-const ml = ['Python', 'TensorFlow']
 
 function Stack() {
 	const [show, setShow] = useState({ stack: false })
@@ -39,7 +27,6 @@ function Stack() {
 		<section>
 			<div className='section-container'>
 				<FlexRow id='stack-cntr'>
-					{/* Animation for stack title */}
 					<motion.div
 						ref={stackRef}
 						initial={{ opacity: 0, x: '-3vw' }}
@@ -52,70 +39,10 @@ function Stack() {
 						<h1 style={{ margin: 0 }}>Stack</h1>
 					</motion.div>
 					<div className='stack'>
-						{/* Animation for Frontend */}
-						<motion.div
-							initial={{ opacity: 0, y: '3vh' }}
-							animate={{
-								opacity: show.stack ? 1 : 0,
-								y: show.stack ? '0' : '3vh',
-							}}
-							transition={{ type: 'spring', duration: 2, delay: 0.1 }}
-						>
-							<div className='stack-list'>
-								<h4>Frontend</h4>
-								{frontEnd.map((tech) => (
-									<div>{tech}</div>
-								))}
-							</div>
-						</motion.div>
-						{/* Animation for backend */}
-						<motion.div
-							initial={{ opacity: 0, y: '3vh' }}
-							animate={{
-								opacity: show.stack ? 1 : 0,
-								y: show.stack ? '0' : '3vh',
-							}}
-							transition={{ type: 'spring', duration: 2, delay: 0.2 }}
-						>
-							<div className='stack-list'>
-								<h4>Backend</h4>
-								{backEnd.map((tech) => (
-									<div>{tech}</div>
-								))}
-							</div>
-						</motion.div>
-						{/* Animation for hosting */}
-						<motion.div
-							initial={{ opacity: 0, y: '3vh' }}
-							animate={{
-								opacity: show.stack ? 1 : 0,
-								y: show.stack ? '0' : '3vh',
-							}}
-							transition={{ type: 'spring', duration: 2, delay: 0.3 }}
-						>
-							<div className='stack-list'>
-								<h4>Hosting</h4>
-								{hosting.map((tech) => (
-									<div>{tech}</div>
-								))}
-							</div>
-						</motion.div>
-						{/* Animation for machine learning */}
-						<motion.div
-							initial={{ opacity: 0, y: '3vh' }}
-							animate={{
-								opacity: show.stack ? 1 : 0,
-								y: show.stack ? '0' : '3vh',
-							}}
-							transition={{ type: 'spring', duration: 2, delay: 0.4 }}
-						>
-							<div className='stack-list'>
-								<h4>Machine Learning</h4>
-								{ml.map((tech) => (
-									<div>{tech}</div>
-								))}
-							</div>
-						</motion.div>
+						<StackFrontend show={show} delay={0.15} />
+						<StackBackend show={show} delay={0.3} />
+						<StackHosting show={show} delay={0.45} />
+						<StackML show={show} delay={0.6} />
 					</div>
 				</FlexRow>
 			</div>
