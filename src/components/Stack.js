@@ -1,6 +1,4 @@
-import React, { useLayoutEffect, useRef, useState } from 'react'
-import { FlexCol, FlexColLeft, FlexRow } from './StyledComponents'
-import { motion } from 'framer-motion'
+import { FlexCol, FlexColLeft } from './StyledComponents'
 import {
 	StackBackend,
 	StackFrontend,

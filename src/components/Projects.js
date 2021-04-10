@@ -1,4 +1,3 @@
-import React, { useLayoutEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { FlexColLeft, ProjectCard, SectionHeader } from './'
 import './Projects.css'
@@ -10,7 +9,7 @@ function Projects({ show }) {
 				<FlexColLeft>
 					<SectionHeader
 						title={'Projects'}
-						description={`I like to stay busy and always have a project in the works. Take a look at some of the applications, articles, and companies I've dedicated my time to.`}
+						description={`When I have an idea I like to build it! Check out what I've been working on.`}
 						show={show}
 						delay={0.2}
 					/>
