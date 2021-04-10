@@ -23,7 +23,8 @@ function Projects({ show }) {
 					>
 						<div className='grid-container'>
 							<ProjectCard
-								link={'https://github.com/j-dags/InfauxWars'}
+								link={'https://infauxwars.herokuapp.com/'}
+								github={'https://github.com/j-dags/InfauxWars'}
 								img={'./InfauxWars.png'}
 								alt={'Infaux Wars'}
 								title={'Infaux Wars'}
@@ -31,7 +32,8 @@ function Projects({ show }) {
 							/>
 
 							<ProjectCard
-								link={'https://github.com/j-dags/AboveTheBreak'}
+								link={'https://abovethebreak.herokuapp.com/'}
+								github={'https://github.com/j-dags/AboveTheBreak'}
 								img={'./AboveTheBreak.png'}
 								alt={'Above The Break'}
 								title={'Above The Break'}

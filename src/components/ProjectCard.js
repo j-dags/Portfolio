@@ -1,8 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FlexColLeft } from './'
+import { FlexColLeft, FlexRow } from './'
 
-function ProjectCard({ link, img, alt, title, description }) {
+function ProjectCard({ link, img, alt, title, description, github }) {
 	return (
 		<FlexColLeft>
 			<a href={link} target='_blank' rel='noreferrer'>
@@ -13,8 +13,23 @@ function ProjectCard({ link, img, alt, title, description }) {
 				>
 					<img src={img} alt={alt} />
 				</motion.div>
-				<h3>{title}</h3>
+				<FlexRow
+					style={{ justifyContent: 'space-between', marginBottom: '1rem' }}
+				>
+					<h2>{title}</h2>
+					{github && (
+						<a
+							className='githubLink'
+							href={github}
+							target='_blank'
+							rel='noreferrer'
+						>
+							github
+						</a>
+					)}
+				</FlexRow>
 				<p>{description}</p>
+				<span>{<br />}</span>
 			</a>
 		</FlexColLeft>
 	)
