@@ -7,8 +7,8 @@ function StackML({ show, delay }) {
 		<motion.div
 			initial={{ opacity: 0, y: '3vh' }}
 			animate={{
-				opacity: show.stack ? 1 : 0,
-				y: show.stack ? '0' : '3vh',
+				opacity: show ? 1 : 0,
+				y: show ? '0' : '3vh',
 			}}
 			transition={{ type: 'spring', duration: 2, delay: delay }}
 		>

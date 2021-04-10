@@ -10,42 +10,24 @@ import {
 } from './'
 import './Stack.css'
 
-function Stack() {
-	const [show, setShow] = useState({ stack: false })
-	const stackRef = useRef(null)
-
-	useLayoutEffect(() => {
-		const topPos = (element) => element.getBoundingClientRect().top
-		const stackPos = topPos(stackRef.current)
-
-		const onScroll = () => {
-			const scrollPos = window.scrollY + window.innerHeight
-			if (scrollPos > stackPos + 100) {
-				setShow((state) => ({ ...state, stack: true }))
-			}
-		}
-
-		window.addEventListener('scroll', onScroll)
-		return () => window.removeEventListener('scroll', onScroll)
-	}, [])
-
+function Stack({ show }) {
 	return (
 		<section>
 			<div className='section-container'>
 				<FlexCol id='stack-cntr'>
-					<FlexColLeft ref={stackRef}>
+					<FlexColLeft>
 						<SectionHeader
 							title={'Stack'}
 							description={`Through my studies, I've gained a solid grasp of web development and computer science fundamentals. I'm constantly learning and am attracted to simple, adaptive libraries that can empower wider groups of people to dive into tech.`}
-							show={show.stack}
+							show={show}
 							delay={0.2}
 						/>
 					</FlexColLeft>
 					<div className='stack'>
-						<StackFrontend show={show} delay={0.2} />
-						<StackBackend show={show} delay={0.45} />
-						<StackHosting show={show} delay={0.6} />
-						<StackML show={show} delay={0.75} />
+						<StackFrontend show={show} delay={0.4} />
+						<StackBackend show={show} delay={0.55} />
+						<StackHosting show={show} delay={0.7} />
+						<StackML show={show} delay={0.85} />
 					</div>
 				</FlexCol>
 			</div>

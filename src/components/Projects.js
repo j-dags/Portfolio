@@ -3,44 +3,24 @@ import { motion } from 'framer-motion'
 import { FlexColLeft, ProjectCard, SectionHeader } from './'
 import './Projects.css'
 
-function Projects() {
-	const [show, doShow] = useState({ projects: false })
-	const projectsRef = useRef(null)
-
-	useLayoutEffect(() => {
-		// Find the height of our ref/component in question (i.e. projectsRef)
-		const topPos = (element) => element.getBoundingClientRect().top
-		const projectsPos = topPos(projectsRef.current)
-
-		// Scroll listener
-		const onScroll = () => {
-			const scrollPos = window.scrollY + window.innerHeight
-			// If window scroll height exceeds height of our ref (+200), show component
-			if (scrollPos > projectsPos + 200)
-				doShow((state) => ({ ...state, projects: true }))
-		}
-
-		window.addEventListener('scroll', onScroll)
-		return () => window.removeEventListener('scroll', onScroll)
-	}, [])
-
+function Projects({ show }) {
 	return (
 		<section>
 			<div className='section-container'>
-				<FlexColLeft ref={projectsRef}>
+				<FlexColLeft>
 					<SectionHeader
 						title={'Projects'}
 						description={`I like to stay busy and always have a project in the works. Take a look at some of the applications, articles, and companies I've dedicated my time to.`}
-						show={show.projects}
+						show={show}
 						delay={0.2}
 					/>
 					<motion.div
 						initial={{ opacity: 0, y: '3vh' }}
 						animate={{
-							opacity: show.projects ? 1 : 0,
-							y: show.projects ? '0' : '3vh',
+							opacity: show ? 1 : 0,
+							y: show ? '0' : '3vh',
 						}}
-						transition={{ type: 'spring', duration: 2, delay: 0.5 }}
+						transition={{ type: 'spring', duration: 2, delay: 0.4 }}
 					>
 						<div className='grid-container'>
 							<ProjectCard
