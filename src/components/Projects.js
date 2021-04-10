@@ -28,7 +28,7 @@ function Projects({ show }) {
 								img={'./InfauxWars.png'}
 								alt={'Infaux Wars'}
 								title={'Infaux Wars'}
-								description={'Fake news detection web app'}
+								description={'Fake news detection web app.'}
 							/>
 
 							<ProjectCard
@@ -37,7 +37,7 @@ function Projects({ show }) {
 								img={'./AboveTheBreak.png'}
 								alt={'Above The Break'}
 								title={'Above The Break'}
-								description={'Fantasy basketball stats tracker and visualizer'}
+								description={'Fantasy basketball stats tracker and visualizer.'}
 							/>
 							<ProjectCard
 								link={
@@ -46,7 +46,7 @@ function Projects({ show }) {
 								img={'./MediumArticle.png'}
 								alt={'Medium Article'}
 								title={'Medium Article'}
-								description={'Natural language processing for beginners'}
+								description={'Natural language processing for beginners.'}
 							/>
 						</div>
 					</motion.div>
