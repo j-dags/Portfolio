@@ -23,6 +23,7 @@ function Projects({ show }) {
 					>
 						<div className='grid-container'>
 							<ProjectCard
+								className='project-card'
 								link={'https://infauxwars.herokuapp.com/'}
 								github={'https://github.com/j-dags/InfauxWars'}
 								img={'./InfauxWars.png'}
@@ -32,6 +33,7 @@ function Projects({ show }) {
 							/>
 
 							<ProjectCard
+								className='project-card'
 								link={'https://abovethebreak.herokuapp.com/'}
 								github={'https://github.com/j-dags/AboveTheBreak'}
 								img={'./AboveTheBreak.png'}
@@ -40,6 +42,7 @@ function Projects({ show }) {
 								description={'Fantasy basketball stats tracker and visualizer.'}
 							/>
 							<ProjectCard
+								className='project-card'
 								link={
 									'https://jon-dagdagan.medium.com/fake-news-detection-pre-processing-text-d9648a2854e5'
 								}

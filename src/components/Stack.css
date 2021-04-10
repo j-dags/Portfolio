@@ -13,3 +13,12 @@
 .stack-list {
 	margin: 0rem 4rem 0rem 0rem;
 }
+
+/* mobile */
+@media screen and (max-width: 700px) {
+	.stack {
+		flex-direction: column;
+		height: 450px;
+		justify-content: space-between;
+	}
+}

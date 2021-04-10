@@ -41,6 +41,9 @@ a img {
 	width: 120%;
 }
 
-/* h2 {
-	margin-bottom: 1rem;
-} */
+/* mobile */
+@media screen and (max-width: 700px) {
+	.projects-description {
+		margin: 0rem 0rem 2rem 0rem;
+	}
+}

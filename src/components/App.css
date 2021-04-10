@@ -74,7 +74,7 @@ img {
 	border-radius: 48% 52% 68% 32% / 48% 54% 46% 52%;
 	margin-right: 1em;
 	flex: 4 1;
-	font-size: min(3vw, 40px);
+	font-size: min(5vw, 40px);
 	font-weight: 500;
 }
 
@@ -90,4 +90,25 @@ a {
 
 a:hover {
 	cursor: pointer;
+}
+
+/* mobile */
+@media screen and (max-width: 700px) {
+	.section-container {
+		width: 90%;
+		margin: auto;
+		padding: 3rem 0rem;
+	}
+
+	.intro {
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 0;
+		align-items: flex-start;
+	}
+
+	.name {
+		font-size: min(7vw, 40px);
+		margin-bottom: 3rem;
+	}
 }
