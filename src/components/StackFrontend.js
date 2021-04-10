@@ -20,7 +20,7 @@ function StackFrontEnd({ show, delay }) {
 			transition={{ type: 'spring', duration: 2, delay: delay }}
 		>
 			<div className='stack-list'>
-				<h4>Backend</h4>
+				<h4>Frontend</h4>
 				{frontEnd.map((tech) => (
 					<div>{tech}</div>
 				))}

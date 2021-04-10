@@ -13,7 +13,7 @@ function StackML({ show, delay }) {
 			transition={{ type: 'spring', duration: 2, delay: delay }}
 		>
 			<div className='stack-list'>
-				<h4>Backend</h4>
+				<h4>Machine Learning</h4>
 				{ml.map((tech) => (
 					<div>{tech}</div>
 				))}

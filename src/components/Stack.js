@@ -1,7 +1,13 @@
 import React, { useLayoutEffect, useRef, useState } from 'react'
-import { FlexRow } from './StyledComponents'
+import { FlexCol, FlexColLeft, FlexRow } from './StyledComponents'
 import { motion } from 'framer-motion'
-import { StackBackend, StackFrontend, StackML, StackHosting } from './'
+import {
+	StackBackend,
+	StackFrontend,
+	StackML,
+	StackHosting,
+	SectionHeader,
+} from './'
 import './Stack.css'
 
 function Stack() {
@@ -26,25 +32,22 @@ function Stack() {
 	return (
 		<section>
 			<div className='section-container'>
-				<FlexRow id='stack-cntr'>
-					<motion.div
-						ref={stackRef}
-						initial={{ opacity: 0, x: '-3vw' }}
-						animate={{
-							opacity: show.stack ? 1 : 0,
-							x: show.stack ? '0' : '-3vw',
-						}}
-						transition={{ type: 'spring', duration: 2 }}
-					>
-						<h1 style={{ margin: 0 }}>Stack</h1>
-					</motion.div>
+				<FlexCol id='stack-cntr'>
+					<FlexColLeft ref={stackRef}>
+						<SectionHeader
+							title={'Stack'}
+							description={`Through my studies, I've gained a solid grasp of web development and computer science fundamentals. I'm constantly learning and am attracted to simple, adaptive libraries that can empower wider groups of people to dive into tech.`}
+							show={show.stack}
+							delay={0.2}
+						/>
+					</FlexColLeft>
 					<div className='stack'>
-						<StackFrontend show={show} delay={0.15} />
-						<StackBackend show={show} delay={0.3} />
-						<StackHosting show={show} delay={0.45} />
-						<StackML show={show} delay={0.6} />
+						<StackFrontend show={show} delay={0.2} />
+						<StackBackend show={show} delay={0.45} />
+						<StackHosting show={show} delay={0.6} />
+						<StackML show={show} delay={0.75} />
 					</div>
-				</FlexRow>
+				</FlexCol>
 			</div>
 		</section>
 	)

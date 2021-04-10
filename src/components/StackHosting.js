@@ -13,7 +13,7 @@ function StackHosting({ show, delay }) {
 			transition={{ type: 'spring', duration: 2, delay: delay }}
 		>
 			<div className='stack-list'>
-				<h4>Backend</h4>
+				<h4>Hosting</h4>
 				{hosting.map((tech) => (
 					<div>{tech}</div>
 				))}

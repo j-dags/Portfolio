@@ -8,3 +8,8 @@ a img {
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	grid-gap: 4em;
 }
+
+.projects-description {
+	margin: 0rem 0rem 6rem 0rem;
+	max-width: 800px;
+}
