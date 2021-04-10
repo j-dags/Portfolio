@@ -33,7 +33,7 @@ function Intro() {
 								As a former electrical engineer turned fullstack developer, I
 								love crafting simple solutions to interesting problems. Machine
 								learning, responsive design, and physics-based animation
-								libraries are particular areas of interest.
+								libraries are particular interests of mine.
 							</p>
 							<span>{<br />}</span>
 							<p>

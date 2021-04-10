@@ -61,27 +61,13 @@ img {
 	border-radius: 3px;
 }
 
-#footer {
-	background: #eee;
-}
-
-section {
-}
-
-.flexCol {
-	/* display: flex;
-	flex-direction: column;
-	align-items: flex-start; */
-	width: 100%;
-}
-
 .intro {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	max-width: 1300px;
 	padding: 2em;
-	margin: 4rem 2rem 4rem 2rem;
+	/* margin: 4rem 2rem 4rem 2rem; */
 	align-items: center;
 }
 
@@ -95,19 +81,6 @@ section {
 
 .description {
 	flex: 5 1;
-}
-
-/* .section-container p {
-	margin: 2rem 0rem;
-} */
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
 }
 
 a {

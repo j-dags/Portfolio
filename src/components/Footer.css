@@ -1,16 +1,16 @@
-.emailTo {
-	color: #006ba6;
-	font-weight: 500;
-	letter-spacing: 0.5px;
+/* tag text styling */
+#footer a {
 	position: relative;
 	text-decoration: none;
+	color: black;
 	z-index: 5;
 }
 
-.emailTo:before {
+/* tag underline styling, off hover */
+#footer a:before {
 	background-color: #70cdff;
 	bottom: -6px;
-	right: -6px;
+	right: -4px;
 	content: '';
 	height: calc(100% - 4px);
 	opacity: 0.2;
@@ -20,14 +20,42 @@
 	z-index: -1;
 }
 
-.emailTo:hover:before {
-	bottom: -2px;
-	height: 130%;
+/* tag underline styling, on hover */
+#footer a:hover:before {
+	bottom: -4px;
+	height: 140%;
 	opacity: 0.25;
-	right: -6px;
-	width: 110%;
+	right: -5px;
+	width: 120%;
 }
 
-.github:before {
+/* hover styling, specific to email tag */
+#footer .emailTo:hover:before {
+	bottom: -4px;
+	height: 140%;
+	opacity: 0.25;
+	right: -4px;
+	width: 105%;
+}
+
+/* hover styling, specific to github tag */
+#footer .github:before {
 	background-color: #f4d35e;
+}
+
+#footer h4:hover {
+	cursor: pointer;
+}
+
+#footer {
+	background: #fbfbfb;
+}
+
+.footer-links {
+	margin-top: 10rem;
+	justify-content: space-between;
+}
+
+.github {
+	margin-right: 1rem;
 }

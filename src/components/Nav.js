@@ -10,7 +10,7 @@ function Nav() {
 				<FlexRow className='links' style={{ position: 'relative' }}>
 					<a
 						target='_blank'
-						className='github'
+						className='highlight github'
 						rel='noreferrer'
 						href='https://github.com/j-dags'
 					>

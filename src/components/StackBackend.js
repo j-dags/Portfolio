@@ -1,4 +1,3 @@
-import { FlexRow } from './StyledComponents'
 import { motion } from 'framer-motion'
 
 const backEnd = ['Node', 'Express', 'Postgres', 'Sequelize']
